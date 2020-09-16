@@ -31,9 +31,10 @@
 @endsection
 
 @section('htmlbodyassets')
+	<script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
 	<script>
-		$(function() {
-			if (screen.width >= 990) {
+		$(window).on("orientationchange", function(event) {
+			if (event.orientation == 'landscape') {
 				var url = '/rigasvilni/test/json/landscape';
 			} else {
 				var url = '/rigasvilni/test/json/portrait';
@@ -41,6 +42,7 @@
 			getData(url);
 		});
 
+		$(window).orientationchange();
 		function getData(url) {
 			$.getJSON (
 				url,
