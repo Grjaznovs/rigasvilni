@@ -31,7 +31,7 @@
 @endsection
 
 @section('htmlbodyassets')
-	<script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+	<script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
 	<script>
 		$(window).on("orientationchange", function(event) {
 			if (event.orientation == 'landscape') {
@@ -43,6 +43,7 @@
 		});
 
 		$(window).orientationchange();
+		
 		function getData(url) {
 			$.getJSON (
 				url,
@@ -77,6 +78,7 @@
 
 						window.onload = resizeAllGridItems();
 						window.addEventListener("resize", resizeAllGridItems);
+						$(".ui-loader-header").hide();
 					}
 				}
 			);
