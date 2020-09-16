@@ -34,9 +34,9 @@
 	<script>
 		$(function() {
 			if (screen.width >= 990) {
-				var url = '/rigasvilni/landscape';
+				var url = '/rigasvilni/test/landscape';
 			} else {
-				var url = '/rigasvilni/portrait';
+				var url = '/rigasvilni/test/portrait';
 			}
 			getData(url);
 		});
