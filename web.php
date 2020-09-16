@@ -22,5 +22,5 @@ Route::get('setlocale/{locale}', function ($locale) {
 
 Route::get('rigasvilni/test', 'RigasVilniController@index');
 Route::get('rigasvilni/test/store', 'RigasVilniController@store');
-Route::get('rigasvilni/{status}', 'RigasVilniController@getData');
+Route::get('rigasvilni/test/{status}', 'RigasVilniController@getData');
 
