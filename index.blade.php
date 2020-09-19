@@ -34,18 +34,17 @@
 	<script>
 		var statusPage = '';
 		$(function () {
-			$(window).on("deviceorientation", function() {
-				if (window.matchMedia("(orientation: portrait)").matches) {
-					var url = '/rigasvilni/test/json/portrait';
-					statusPage = window.matchMedia("(orientation: portrait)").media;
-				}
+			if (window.matchMedia("(orientation: portrait)").matches) {
+				var url = '/rigasvilni/test/json/portrait';
+				statusPage = window.matchMedia("(orientation: portrait)").media;
+			}
 
-				if (window.matchMedia("(orientation: landscape)").matches) {
-					var url = '/rigasvilni/test/json/landscape';
-					statusPage = window.matchMedia("(orientation: landscape)").media;
-				}
-				getData(url);
-			});
+			if (window.matchMedia("(orientation: landscape)").matches) {
+				var url = '/rigasvilni/test/json/landscape';
+				statusPage = window.matchMedia("(orientation: landscape)").media;
+			}
+			getData(url);
+			
 		});
 
 		$(window).on('resize', function() {
