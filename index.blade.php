@@ -31,19 +31,38 @@
 @endsection
 
 @section('htmlbodyassets')
-	<script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
 	<script>
-		$(window).on("orientationchange", function(event) {
-			if (event.orientation == 'landscape') {
-				var url = '/rigasvilni/test/json/landscape';
-			} else {
-				var url = '/rigasvilni/test/json/portrait';
-			}
-			getData(url);
+		var statusPage = '';
+		$(function () {
+			$(window).on("deviceorientation", function() {
+				if (window.matchMedia("(orientation: portrait)").matches) {
+					var url = '/rigasvilni/test/json/portrait';
+					statusPage = window.matchMedia("(orientation: portrait)").media;
+				}
+
+				if (window.matchMedia("(orientation: landscape)").matches) {
+					var url = '/rigasvilni/test/json/landscape';
+					statusPage = window.matchMedia("(orientation: landscape)").media;
+				}
+				getData(url);
+			});
 		});
 
-		$(window).orientationchange();
-		
+		$(window).on('resize', function() {
+			if (!window.matchMedia(statusPage).matches) {
+				if (window.matchMedia("(orientation: portrait)").matches) {
+					var url = '/rigasvilni/test/json/portrait';
+					statusPage = window.matchMedia("(orientation: portrait)").media;
+				}
+
+				if (window.matchMedia("(orientation: landscape)").matches) {
+					var url = '/rigasvilni/test/json/landscape';
+					statusPage = window.matchMedia("(orientation: landscape)").media;
+				}
+				getData(url);
+			}
+		});
+
 		function getData(url) {
 			$.getJSON (
 				url,
@@ -78,7 +97,6 @@
 
 						window.onload = resizeAllGridItems();
 						window.addEventListener("resize", resizeAllGridItems);
-						$(".ui-loader-header").hide();
 					}
 				}
 			);
