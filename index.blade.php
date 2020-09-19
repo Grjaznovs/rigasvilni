@@ -34,16 +34,16 @@
 	<script>
 		var statusPage = '';
 		$(function () {
-			start();
+			orientation();
 		});
 
 		$(window).on('resize', function() {
 			if (!window.matchMedia(statusPage).matches) {
-				start();
+				orientation();
 			}
 		});
 
-		function start() {
+		function orientation() {
 			if (window.matchMedia("(orientation: portrait)").matches) {
 				var url = '/rigasvilni/test/json/portrait';
 				statusPage = window.matchMedia("(orientation: portrait)").media;
