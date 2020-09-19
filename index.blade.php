@@ -34,6 +34,16 @@
 	<script>
 		var statusPage = '';
 		$(function () {
+			start();
+		});
+
+		$(window).on('resize', function() {
+			if (!window.matchMedia(statusPage).matches) {
+				start();
+			}
+		});
+
+		function start() {
 			if (window.matchMedia("(orientation: portrait)").matches) {
 				var url = '/rigasvilni/test/json/portrait';
 				statusPage = window.matchMedia("(orientation: portrait)").media;
@@ -44,23 +54,7 @@
 				statusPage = window.matchMedia("(orientation: landscape)").media;
 			}
 			getData(url);
-			
-		});
-
-		$(window).on('resize', function() {
-			if (!window.matchMedia(statusPage).matches) {
-				if (window.matchMedia("(orientation: portrait)").matches) {
-					var url = '/rigasvilni/test/json/portrait';
-					statusPage = window.matchMedia("(orientation: portrait)").media;
-				}
-
-				if (window.matchMedia("(orientation: landscape)").matches) {
-					var url = '/rigasvilni/test/json/landscape';
-					statusPage = window.matchMedia("(orientation: landscape)").media;
-				}
-				getData(url);
-			}
-		});
+		}
 
 		function getData(url) {
 			$.getJSON (
