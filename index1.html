@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" xml:lang="en">
+	<head>
+		<title>My home work</title>		
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   		<script type="text/javascript" src="https://www.howtomake.com.ua/wp-content/themes/howtomake/js/jquery-1.8.2.min.js"></script>
+    	<style>
+    		footer {
+				float: left;
+				width: 100%;
+				height: 50px;
+				margin-top: 5px;
+				background: #F1F0A1;
+				font-size: 35px;
+				text-align: center;
+				-webkit-border-radius: 8px;
+				-moz-border-radius: 8px;
+				border-radius: 8px;
+				-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+				-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+				box-shadow: 0 1px 3px rgba(0,0,0,.4);
+			}
+
+			TABLE {
+				border-collapse: collapse; /* Убираем двойные линии между ячейками */
+				width: 300px; /* Ширина таблицы */
+			}
+
+			TH, TD {
+				border: 1px solid black; /* Параметры рамки */
+				text-align: center; /* Выравнивание по центру */
+				padding: 4px; /* Поля вокруг текста */
+			}
+
+			ul {
+				padding-left: 40px; margin-top: 1em; margin-bottom: 1em;
+			}
+
+			th {
+				background-color: #8ABB55;
+			}
+
+			section nav form {
+				margin:20px;
+			}
+
+
+			@media screen and (max-width: 2024px) {
+				body {
+				  background-color: #05ffb0;
+				}
+
+				section nav form input[type="text"] {
+				    width:250px;
+				    height: 30px;
+				}
+				
+				header h1 {
+					background: #ffffff;
+					font-size: 35px;
+					text-align: center;
+					-webkit-border-radius: 8px;
+					-moz-border-radius: 8px;
+					border-radius: 8px;
+					-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					box-shadow: 0 1px 3px rgba(0,0,0,.4);
+				}
+
+				.leftMenu {
+					width: 18%;
+					height: 650px;
+					float: left;
+					background: #fff;
+					margin: 0 0 10px;
+					padding: 0px 10px;
+					-webkit-border-radius: 8px;
+					-moz-border-radius: 8px;
+					border-radius: 8px;
+					-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					box-shadow: 0 1px 3px rgba(0,0,0,.4);
+				}
+
+				section h2 {
+					margin: 20px 0 5px;
+					padding: 10px;
+				}
+
+				section ul {
+					margin: 0;
+					padding: 0;
+				}
+
+				section li {
+					margin: 2px;
+					padding: 6px 2px;
+					list-style: none;
+					clear: both;
+					border-top: solid 1px #eee;
+				}
+
+				section {
+					width: 50%;
+					height: 650px;
+					display: inline-block;
+					margin-left: 10px;
+					background: #ddd;
+					-webkit-border-radius: 8px;
+					-moz-border-radius: 8px;
+					border-radius: 8px;
+					-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					box-shadow: 0 1px 3px rgba(0,0,0,.4);
+				}
+
+				.rightMenu {
+					width: 27%;
+					height: 650px;
+					background: red;
+					float: right;
+					-webkit-border-radius: 8px;
+					-moz-border-radius: 8px;
+					border-radius: 8px;
+					-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					box-shadow: 0 1px 3px rgba(0,0,0,.4);
+				}
+				
+				section h3 {
+					background: #EE9B28;
+					margin: 10px;
+					font-size: 25px;
+					text-align: center;
+					-webkit-border-radius: 8px;
+					-moz-border-radius: 8px;
+					border-radius: 8px;
+					-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					box-shadow: 0 1px 3px rgba(0,0,0,.4);
+				}
+
+				section nav {
+					background: #D2D2D2;
+					margin: 10px;
+					height: 180px;
+					font-size: 12px;
+					text-align: left;
+				}
+
+				section nav table {
+					background: #ED6D29;
+					height: 150px;
+					width: 85%;
+					margin: 5px 10px 15px 20px;
+					border-radius: 8px;
+					font-size: 16px;
+				}
+
+			}
+
+			@media screen and (max-width: 850px) {
+				body {
+				  background-color: lightblue;
+				}
+
+				section nav form input[type="text"] {
+				    width:250px;
+				    height: 30px;
+				}
+
+				header h1 {
+					background: #ffffff;
+					font-size: 35px;
+					text-align: center;
+					-webkit-border-radius: 8px;
+					-moz-border-radius: 8px;
+					border-radius: 8px;
+					-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					box-shadow: 0 1px 3px rgba(0,0,0,.4);
+				}
+
+				.leftMenu {
+					width: 23%;
+					height: 650px;
+					float: left;
+					background: #fff;
+					margin: 0 0 10px;
+					padding: 0px 10px;
+					-webkit-border-radius: 8px;
+					-moz-border-radius: 8px;
+					border-radius: 8px;
+					-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					box-shadow: 0 1px 3px rgba(0,0,0,.4);
+				}
+
+				section h2 {
+					margin: 20px 0 5px;
+					padding: 10px;
+				}
+
+				section ul {
+					margin: 0;
+					padding: 0;
+				}
+
+				section li {
+					margin: 2px;
+					padding: 6px 2px;
+					list-style: none;
+					clear: both;
+					border-top: solid 1px #eee;
+				}
+
+				section {
+					width: 72%;
+					height: 650px;
+					float: left;
+					margin-left: 10px;
+					background: #ddd;
+					-webkit-border-radius: 8px;
+					-moz-border-radius: 8px;
+					border-radius: 8px;
+					-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					box-shadow: 0 1px 3px rgba(0,0,0,.4);
+				}
+
+				section h3 {
+					background: #EE9B28;
+					margin: 10px;
+					font-size: 25px;
+					text-align: center;
+					-webkit-border-radius: 8px;
+					-moz-border-radius: 8px;
+					border-radius: 8px;
+					-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					box-shadow: 0 1px 3px rgba(0,0,0,.4);
+				}
+
+				section nav {
+					background: #D2D2D2;
+					margin: 10px;
+					height: 180px;
+					font-size: 12px;
+					text-align: left;
+				}
+
+				section nav table {
+					background: #ED6D29;
+					height: 150px;
+					width: 85%;
+					margin: 5px 10px 15px 20px;
+					border-radius: 8px;
+					font-size: 16px;
+				}
+
+				.rightMenu {
+					visibility: hidden;
+					height: 0px;
+				}
+
+			}
+
+			@media all and (max-width: 767px) {
+				body {
+				  background-color: #00FFFF;
+				}
+
+				section nav form input[type="text"] {
+				    width:250px;
+				    height: 30px;
+				}
+
+				header h1 {
+					background: #ffffff;
+					font-size: 40px;
+					text-align: center;
+					-webkit-border-radius: 8px;
+					-moz-border-radius: 8px;
+					border-radius: 8px;
+					-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					box-shadow: 0 1px 3px rgba(0,0,0,.4);
+				}
+
+				section h2 {
+					margin: 20px;
+					padding: 0px;
+					visibility: hidden;
+				}
+				
+
+				.leftMenu {
+					list-style-type: none;
+					width: 98%;
+					height: 50px;
+					padding-left: 0;
+					background: #fff;
+				}
+				
+				section ul {
+					padding: 0;
+					margin-top: -50px;
+				}
+
+				section li {
+					display: inline;
+					margin: 5px;
+					padding: 0;
+					list-style: none;
+					clear: none;
+					border-top: none;
+				}
+
+				section {
+					width: 100%;
+					height: 650px;
+					float: left;
+					margin-left: 0px;
+					background: #EE9B28;
+					-webkit-border-radius: 8px;
+					-moz-border-radius: 8px;
+					border-radius: 8px;
+					-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+					box-shadow: 0 1px 3px rgba(0,0,0,.4);
+				}
+
+				section h3 {
+					visibility: hidden;
+					margin-top: -30px;
+				}
+
+				section nav {
+					background: none;
+					margin: 5px;
+					height: 180px;
+					font-size: 20px;
+					text-align: left;
+				}
+
+				section nav table {
+					background: #ED6D29;
+					height: 150px;
+					width: 85%;
+					margin: 0px 0px 0px 0px;
+					border-radius: 8px;
+					font-size: 16px;
+				}
+
+				.rightMenu {
+					visibility: hidden;
+					height: 0px;
+				}
+			}
+
+			.button{
+				display: inline-block;
+				*display: inline;
+				zoom: 1;
+				padding: 6px 20px;
+				margin: 0;
+				cursor: pointer;
+				border: 1px solid #bbb;
+				overflow: visible;
+				font: bold 13px arial, helvetica, sans-serif;
+				text-decoration: none;
+				white-space: nowrap;
+				color: #555;
+				
+				-webkit-transition: background-color .2s ease-out;
+				-moz-transition: background-color .2s ease-out;
+				-ms-transition: background-color .2s ease-out;
+				-o-transition: background-color .2s ease-out;
+				transition: background-color .2s ease-out;
+				background-clip: padding-box; /* Fix bleeding */
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+				-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+				box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+				text-shadow: 0 1px 0 rgba(255,255,255, .9);
+			}
+			
+			/* Smaller buttons styles */
+			.button.small{
+			  padding: 4px 12px;
+			}
+			
+			/* Colored buttons styles */
+			.button.blue {
+			  color: #fff;
+			  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+			  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.3)), to(rgba(255,255,255,0)));
+			  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+			  background-image: -moz-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+			  background-image: -ms-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+			  background-image: -o-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+			}
+			
+			.button.blue{
+			  background-color: #269CE9;
+			  border-color: #269CE9;
+			}
+			
+			.button.blue:hover{
+			  background-color: #70B9E8;
+			}
+			
+			.button.blue:active{
+			  background: #269CE9;
+			}
+
+			.btn {
+		        width: 50px;
+		        height: 50px;
+		        display: inline-block;
+				text-decoration:none; 
+				text-align:center; 
+				border:solid 1px #004F72; 
+				-webkit-border-radius:4px;
+				-moz-border-radius:4px; 
+				border-radius: 4px; 
+				font:50px Arial, Helvetica, sans-serif; 
+				font-weight:bold; 
+				color:#E5FFFF; 
+				background-color:#3BA4C7; 
+				background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+				background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+				background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+				background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+				-webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+				-moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+				box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+		    }
+ 
+		    #calc-wrap {
+		        padding: 10px;
+		        text-align: center;
+		    }
+		 
+		    #calc {
+		        width: 210px;
+		        display: inline-block;
+		    }
+		 
+		    #inputVal {
+		        width: 100%;
+		        border: 0;
+		        font-size: 16px;
+		        resize: vertical;
+		    }
+		    
+		    #clock{
+			  font-family:Tahoma, sans-serif;
+			  font-size:20px;
+			  font-weight:bold;
+			  color:#0000cc;	
+			}
+			
+			.form_box {
+			  width: 400px;
+			  margin: 40px auto;
+			}
+			.form_box label {
+			  font-size: 13px;
+			  font-weight: bold;
+			  color: #444444;
+			  display: block;
+			}
+			.form_box input {
+			  display: block;
+			  border: 2px solid #cfcfcf;
+			  font-size: 14px;
+			  color: #444444;
+			  padding: 7px 7px 8px;
+			  width: 250px;
+			  margin-bottom: 20px;
+			  transition: all 0.5s;
+			  -webkit-transition: all 0.5s;
+			  -moz-transition: all 0.5s;
+			}
+
+
+		</style>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myPass");
+			    if (x.type === "password") {
+			        x.type = "text";
+			    } else {
+			        x.type = "password";
+			    }
+			}
+			// код начнёт выполняться после загрузки страницы
+			// когда окно загрузится, сработает метод window.onLoad
+			window.addEventListener('load', function OnWindowLoaded() {
+			    // набор кнопок
+			    var signs = [
+			        '1', '2', '3', '+',
+			        '4', '5', '6', '-',
+			        '7', '8', '9', '*',
+			        'c', '0', '=', '/'
+			    ];
+			 
+			    // форма калькулятора
+			    var calc = document.getElementById('calc');
+			 
+			    // текстовое поле с математическим выражением
+			    var textArea = document.getElementById('inputVal');
+			 
+			    // Добавление кнопок к форме калькулятора
+			    signs.forEach(function (sign) {
+			        var signElement = document.createElement('div');
+			        signElement.className = 'btn';
+			        signElement.innerHTML = sign;
+			        calc.appendChild(signElement);
+			    });
+			 
+			    // проходит по всем кнопкам калькулятора
+			    // добавляет обработчик на клик
+			    document.querySelectorAll('#calc-wrap .btn').forEach(function (button) {
+			        // Добавляем действие, выполняемое при клике на любую кнопку
+			        button.addEventListener('click', onButtonClick);
+			    });
+			 
+			    // функция клика по кнопке калькулятора
+			    function onButtonClick(e) {
+			        // e - MouseEvent (содержит информацию о клике)
+			        if (e.target.innerHTML === 'c') {
+			            // Если нажата кнопка "с", то стирает все из текстового поля
+			            textArea.innerHTML = '0';
+			        } else if (e.target.innerHTML === '=') {
+			            // Если нажата кнопка "=", то, приведя выражение
+			            // в текстовом поле к javascript, вычислить значение
+			            textArea.innerHTML = eval(textArea.innerHTML);
+			        } else if (textArea.innerHTML === '0') {
+			            // Если textarea содержит только "0", то
+			            // стереть "0" и записать
+			            // значения кнопки в текстовое поле
+			            textArea.innerHTML = e.target.innerHTML;
+			        } else {
+			            // Добавление значения кнопки в текстовое поле
+			            textArea.innerHTML += e.target.innerHTML;
+			        }
+			    }
+			});
+			
+			//clock
+			function displayCanvas(){
+			    var canvasHTML = document.getElementById('myCanvas');
+			    var contextHTML = canvasHTML.getContext('2d');
+			    contextHTML.strokeRect(0,0,canvasHTML.width, canvasHTML.height);
+				
+			    //Расчет координат центра и радиуса часов
+			    var radiusClock = canvasHTML.width/2 - 10;
+			    var xCenterClock = canvasHTML.width/2;
+			    var yCenterClock = canvasHTML.height/2;
+				
+			    //Очистка экрана. 
+			    contextHTML.fillStyle = "#ffffff";
+			    contextHTML.fillRect(0,0,canvasHTML.width,canvasHTML.height);
+				
+			    //Рисуем контур часов
+			    contextHTML.strokeStyle =  "#000000";
+			    contextHTML.lineWidth = 1;
+			    contextHTML.beginPath();
+			    contextHTML.arc(xCenterClock, yCenterClock, radiusClock, 0, 2*Math.PI, true);
+			    contextHTML.moveTo(xCenterClock, yCenterClock);
+			    contextHTML.stroke();
+			    contextHTML.closePath();
+				
+			    //Рисуем рисочки часов
+			    var radiusNum = radiusClock - 10; //Радиус расположения рисочек	
+			    var radiusPoint;
+			    for(var tm = 0; tm < 60; tm++){
+				  contextHTML.beginPath();
+				  if(tm % 5 == 0){radiusPoint = 5;}else{radiusPoint = 2;} //для выделения часовых рисочек
+				  var xPointM = xCenterClock + radiusNum * Math.cos(-6*tm*(Math.PI/180) + Math.PI/2);
+				  var yPointM = yCenterClock - radiusNum * Math.sin(-6*tm*(Math.PI/180) + Math.PI/2);
+				  contextHTML.arc(xPointM, yPointM, radiusPoint, 0, 2*Math.PI, true);
+				  contextHTML.stroke();
+				  contextHTML.closePath();
+			    } 
+				
+			    //Оцифровка циферблата часов
+			    for(var th = 1; th <= 12; th++){
+				contextHTML.beginPath();
+				contextHTML.font = 'bold 25px sans-serif';
+				var xText = xCenterClock + (radiusNum - 30) * Math.cos(-30*th*(Math.PI/180) + Math.PI/2);
+				var yText = yCenterClock - (radiusNum - 30) * Math.sin(-30*th*(Math.PI/180) + Math.PI/2);
+				if(th <= 9){
+					contextHTML.strokeText(th, xText - 5 , yText + 10);
+				}else{
+					contextHTML.strokeText(th, xText - 15 , yText + 10);
+				}
+			     	contextHTML.stroke();
+				contextHTML.closePath();	
+			    }
+				
+			    //Рисуем стрелки
+			    var lengthSeconds = radiusNum - 10;
+			    var lengthMinutes = radiusNum - 15;
+			    var lengthHour = lengthMinutes / 1.5;
+			    var d = new Date();                //Получаем экземпляр даты
+			    var t_sec = 6*d.getSeconds();                           //Определяем угол для секунд
+			    var t_min = 6*(d.getMinutes() + (1/60)*d.getSeconds()); //Определяем угол для минут
+			    var t_hour = 30*(d.getHours() + (1/60)*d.getMinutes()); //Определяем угол для часов
+				
+			    //Рисуем секунды
+			    contextHTML.beginPath();
+			    contextHTML.strokeStyle =  "#FF0000";
+			    contextHTML.moveTo(xCenterClock, yCenterClock);
+			    contextHTML.lineTo(xCenterClock + lengthSeconds*Math.cos(Math.PI/2 - t_sec*(Math.PI/180)),
+							yCenterClock - lengthSeconds*Math.sin(Math.PI/2 - t_sec*(Math.PI/180)));
+			    contextHTML.stroke();
+			    contextHTML.closePath();
+
+			    //Рисуем минуты
+			    contextHTML.beginPath();
+			    contextHTML.strokeStyle =  "#000000";
+			    contextHTML.lineWidth = 3;
+			    contextHTML.moveTo(xCenterClock, yCenterClock);
+			    contextHTML.lineTo(xCenterClock + lengthMinutes*Math.cos(Math.PI/2 - t_min*(Math.PI/180)),
+							 yCenterClock - lengthMinutes*Math.sin(Math.PI/2 - t_min*(Math.PI/180)));
+			    contextHTML.stroke();
+			    contextHTML.closePath();
+
+			    //Рисуем часы
+			    contextHTML.beginPath();
+			    contextHTML.lineWidth = 5;
+			    contextHTML.moveTo(xCenterClock, yCenterClock);
+			    contextHTML.lineTo(xCenterClock + lengthHour*Math.cos(Math.PI/2 - t_hour*(Math.PI/180)),
+							 yCenterClock - lengthHour*Math.sin(Math.PI/2 - t_hour*(Math.PI/180)));
+			    contextHTML.stroke();
+			    contextHTML.closePath();	
+				
+			    //Рисуем центр часов
+			    contextHTML.beginPath();
+			    contextHTML.strokeStyle =  "#000000";
+			    contextHTML.fillStyle = "#ffffff";
+			    contextHTML.lineWidth = 3;
+			    contextHTML.arc(xCenterClock, yCenterClock, 5, 0, 2*Math.PI, true);
+			    contextHTML.stroke();
+			    contextHTML.fill();
+			    contextHTML.closePath();
+				  
+			    return;
+			}
+
+			window.setInterval(
+				function(){
+				    var d = new Date();
+				    document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+			      displayCanvas();
+				}
+			  , 1000
+			 );
+			//end clock
+
+		</script>
+		
+	</head>
+	<body>
+		<header>
+			<h1>
+				<span id='clock' style="visibility: hidden;"></span>
+				<canvas height='250' width='250' id='myCanvas'></canvas>
+			</h1>
+		</header>
+		
+	    <section class="leftMenu">
+	    	<h2>Menu</h2>
+			<ul>
+				<li><a class="active" href="#">WordPress</a> (3)</li>
+				<li><a href="#">Design</a> (23)</li>
+				<li><a href="#">Design </a>(18)</li>
+			</ul>
+	    </section>
+
+		<section>
+    	 	<h3>
+    	 		Заголовок статьи 1
+    	 	</h3>
+    	 	<nav>
+   	 			<table>
+    	 			<thead>
+						<tr>
+							<th>
+								Name
+							</th>
+							<th>
+								Surname
+							</th>
+							<th>
+								Code
+							</th>
+							<th>
+								Price
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								Dima
+							</td>
+							<td>
+								Grjaznov
+							</td>
+							<td>
+								St57909
+							</td>
+							<td>
+								1478Eu
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Sergei
+							</td>
+							<td>
+								Kostucenko
+							</td>
+							<td>
+								St57910
+							</td>
+							<td>
+								1000Eu
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="3" style="text-align: right;">
+								Kopa:
+							</td>
+							<td>
+								2478Eu
+							</td>
+						</tr>
+					</tfoot>
+   	 			</table>
+     			Дополнительная информация, относящаяся к статье 2
+     			<br/>
+
+     			<form action="C://aaa.php" method="post" class="rf form_box">
+     				<label for="user_name">Имя пользователя:</label>
+					<input type="text" class="rfield" id="user_name"/>
+					<label for="user_family">Фамилия пользователя</label>
+					<input type="text" class="rfield" id="user_family"/>
+					<label for="user_phone">Телефон пользователя:</label>
+					<input type="text" class="rfield" id="user_phone"/>
+					<label for="user_work">Профессия пользователя:</label>
+					<input type="text" class="rfield" id="user_work"/>
+     				<input class="small blue button disabled" style="margin-top: 10px;" type="submit" value="Отправить">
+     			</form>
+    	 	</nav>
+	    </section>
+
+		<section class="rightMenu">
+			<h4>Login</h4>
+			<form action="C://aaa.php" method="post">
+				<div style="text-align: center;">
+					<!-- required Обязательное для заполнения поле.-->
+					<input type="text" name="login" placeholder="Enter Username" style="margin: 1px;" required />
+					<br/>
+					<input
+						type="password"
+						name="password"
+						pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+						placeholder="Enter password"
+						id="myPass"
+						style="margin: 1px;"
+						required
+						title="не менее 8 символов, большие и маленькие буквы, хотя бы одна цифра и спец.символ"
+					/>
+					<br/>
+					<button type="submit">OK</button>
+					<input type="checkbox" id="pass" onclick="myFunction()" />
+					<label for="pass">
+						Show Password
+					</label>
+					<div id="calc-wrap" style="text-align:center; margin-top: 20px;">
+					    <div id="calc">
+					        <textarea id=inputVal>0</textarea>
+					    </div>
+					</div>
+				</div>
+			</form>
+	    </section>
+
+		<footer>
+		    footer
+		</footer>
+			<script>
+				(function( $ ){
+					$(function() {
+						$('.rf').each(function(){
+							var form = $(this),
+								btn = form.find('.button');
+							form.find('.rfield').addClass('empty_field');
+							function checkInput(){
+								form.find('.rfield').each(function(){
+									if($(this).val() != ''){
+										$(this).removeClass('empty_field');
+									} else {
+										$(this).addClass('empty_field');
+									}
+								});
+							}
+							function lightEmpty(){
+								form.find('.empty_field').css({'border-color':'#d8512d'});
+								setTimeout(function(){
+									form.find('.empty_field').removeAttr('style');
+								},500);
+							}
+							setInterval(function(){
+								checkInput();
+								var sizeEmpty = form.find('.empty_field').size();
+								if(sizeEmpty > 0){
+									if(btn.hasClass('disabled')){
+										return false
+									} else {
+										btn.addClass('disabled')
+									}
+								} else {
+									btn.removeClass('disabled')
+								}
+							},500);
+							btn.click(function(){
+								if($(this).hasClass('disabled')){
+									lightEmpty();
+									return false
+								} else {
+									form.submit();
+								}
+							});
+						});
+					});
+				})( jQuery );
+			</script>
+	</body>
+</html>
